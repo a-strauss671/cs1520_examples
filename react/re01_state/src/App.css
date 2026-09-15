@@ -1,0 +1,14 @@
+.everyElem {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+#formArea {
+  background-color: #fafafa;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 3%;
+}
+
