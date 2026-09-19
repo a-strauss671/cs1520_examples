@@ -2,26 +2,30 @@
 <html>
 <head>
 	<title>Inline responsive CSS</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<!-- The meta tag was invented by Apple to grab this info from the device to scale nicely -->
 	<!-- what is vh?  why vh for height, but % for width? -->
 	<style>
 		div {
 			width: 90%;
 			margin: auto;
 		}
-		@media (max-width: 500px) {
+		@media (max-width: 500px) { 
+			/* This is a media query--think of it like a conditional; this says "if your device is up to 500px accordin to the meta info gained above, style this way*/
 			div {
 				background-color: red;
 				height: 80vh;
 			}
 		}
 		@media (min-width: 501px) and (max-width: 600px){
+			/* Else if device has width between501px and 600px, style this way */
 			div {
 				background-color: green;
 				height: 50vh;
 			}
 		}
 		@media (min-width: 601px) {
+			/* Else (if device has 601 px or more), style this way */
 			div {
 				background-color: blue;
 				height: 20vh;
