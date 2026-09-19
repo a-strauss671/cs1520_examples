@@ -13,29 +13,29 @@
 	const z3 = y1 * x;
 	const z4 = x * y2;
 
-	// Expected result:  
+	// Expected result: 125
 	console.log(`1: ${x} + ${y1} = ${z1}`);
 
-	// Expected result:  
+	// Expected result: 17 
 	console.log(`2: ${x} + ${y1} = ${z2}`);
 
-	// Expected result:  
+	// Expected result: 60 
 	console.log(`3: (flipped) ${y1} * ${x} = ${z3}`);
 
 
-	// Expected result:  
+	// Expected result:  number
 	console.log(`4: ${typeof(z4)}`);
 
-	// Expected result:  
+	// Expected result: NaN (because "bogus" can't be coerced)
 	console.log(`5: ${x} * ${y2} = ${z4}`);
 
 	
 	const wacky = z4 + " ha hah";
-	// Expected result:  
+	// Expected result:  Nan ha hah; string
 	console.log(`6: wacky is ${wacky} and its type is ${typeof(wacky)}`);
 
 	let s;
-	// Expected result:  
+	// Expected result:  undefined; undefined
 	console.log(`7: s is ${s} and its type is ${typeof(s)}`);
 
 	s = prompt("Enter a string","");
@@ -73,9 +73,11 @@
 	console.log(`16: q is ${q} and its type is ${typeof(q)}`);
 	var q = 8;
 
+	console.log(`17: q is ${q} and its type is ${typeof(q)}`);
+
 	//p = 5;
 	// Expected result:  
-	console.log(`17: p is ${p} and its type is ${typeof(p)}`);
+	console.log(`18: p is ${p} and its type is ${typeof(p)}`);
 	let p;
 </script>
 </head>

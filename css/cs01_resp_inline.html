@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--In this folder, we've got the three main ways of integrating HTML and CSS, whihc are: -->
+<!--(1) You can put the CSS directly inline with the tag <style> -->
+<!--(2) You can put the CSS in a separate file and then link it in using the <link rel = "stylesheet" media = "media query params" href="path"-->
+<!--(3) You can import a CSS file that does @import url(href) (media query in regular text) or (another media query)" -->
 <html>
 <head>
 	<title>Inline responsive CSS</title>
@@ -6,7 +10,7 @@
 	<!-- The meta tag was invented by Apple to grab this info from the device to scale nicely -->
 	<!-- what is vh?  why vh for height, but % for width? -->
 	<style>
-		div {
+		div { /* says "style any div elements like this" */
 			width: 90%;
 			margin: auto;
 		}
@@ -34,6 +38,7 @@
 	</style>
 </head>
 <body>
-	<div></div>
+	<div></div> 
+	<!-- Style like the css element labeled "div"-->
 </body>
 </html>
